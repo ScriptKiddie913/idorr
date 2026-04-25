@@ -31,7 +31,7 @@ export default function DashboardPage() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    const token = localStorage.getItem("channelneg-token");
+    const token = localStorage.getItem("ilf-token");
     if (!token) {
       router.replace("/login");
       return;
@@ -45,7 +45,7 @@ export default function DashboardPage() {
       });
 
       if (!response.ok) {
-        localStorage.removeItem("channelneg-token");
+        localStorage.removeItem("ilf-token");
         setError("Session is invalid. Please sign in again.");
         return;
       }
@@ -58,7 +58,7 @@ export default function DashboardPage() {
   }, [router]);
 
   function signOut() {
-    localStorage.removeItem("channelneg-token");
+    localStorage.removeItem("ilf-token");
     router.push("/login");
   }
 

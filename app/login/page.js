@@ -28,7 +28,7 @@ export default function LoginPage() {
         throw new Error(data.error || "Unable to sign in");
       }
 
-      localStorage.setItem("channelneg-token", data.token);
+      localStorage.setItem("ilf-token", data.token);
       router.push("/dashboard");
     } catch (err) {
       setError(err.message);
@@ -41,7 +41,7 @@ export default function LoginPage() {
     <main className="page">
       <div className="nav">
         <Link href="/" className="brand">
-          ChannelNeg
+          ILF
         </Link>
       </div>
 

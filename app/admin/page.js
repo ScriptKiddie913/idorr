@@ -10,7 +10,7 @@ export default function AdminPage() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    const token = localStorage.getItem("channelneg-token");
+    const token = localStorage.getItem("ilf-token");
     if (!token) {
       router.replace("/login");
       return;
@@ -39,7 +39,7 @@ export default function AdminPage() {
     <main className="page">
       <div className="nav">
         <Link href="/dashboard" className="brand">
-          ChannelNeg
+          ILF
         </Link>
         <div className="nav-links">
           <Link href="/dashboard" className="button ghost">

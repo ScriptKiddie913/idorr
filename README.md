@@ -1,4 +1,4 @@
-# ChannelNeg CTF Challenge
+# ILF CTF Challenge
 
 A deliberately vulnerable web challenge built with Next.js.
 

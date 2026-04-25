@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "ChannelNeg Identity Portal",
+  title: "ILF Identity Portal",
   description: "Internal access portal"
 };
 
