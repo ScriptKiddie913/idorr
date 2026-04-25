@@ -30,7 +30,7 @@ export default function HomePage() {
       </div>
 
       <section className="hero card glow-card">
-        <span className="badge">Fictional Organization Interface</span>
+        <span className="badge">Organization Interface</span>
         <h1>Irar Liberation Force Strategic Dashboard</h1>
         <p>
           High-level situational board for command readiness, logistics tracking, communication
